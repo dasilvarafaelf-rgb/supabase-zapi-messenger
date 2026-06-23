@@ -1,1 +1,0 @@
-# supabase-zapi-messenger
