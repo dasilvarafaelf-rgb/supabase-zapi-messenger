@@ -26,10 +26,6 @@ SUPABASE_KEY=sua_anon_key
 ZAPI_INSTANCE_ID=seu_instance_id
 ZAPI_TOKEN=seu_token
 ZAPI_CLIENT_TOKEN=seu_client_token
-```
-
-> ⚠️ Nunca suba o arquivo `.env` para o GitHub. Ele já está no `.gitignore`.
-
 ---
 
 ## Como rodar
