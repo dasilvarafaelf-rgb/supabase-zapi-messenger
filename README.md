@@ -8,11 +8,21 @@ Projeto em Python que lê contatos cadastrados no Supabase e envia mensagens per
 
 No painel do Supabase, crie uma tabela chamada `contacts` com as colunas:
 
-| Coluna    | Tipo | Observação       |
-|-----------|------|------------------|
-| id        | int8 | Primary Key      |
-| nome      | text |                  |
-| telefone  | text | Formato: 5511999999999 |
+| Coluna   | Tipo   | Observação                        |
+|----------|--------|-----------------------------------|
+| id       | int8   | Primary Key, gerado automaticamente |
+| nome     | text   | Not null                          |
+| telefone | text   | Not null. Formato: 5511999999999  |
+
+Ou rode direto no SQL Editor do Supabase:
+
+```sql
+create table if not exists contacts (
+    id bigint generated always as identity primary key,
+    nome text not null,
+    telefone text not null
+);
+```
 
 ---
 
